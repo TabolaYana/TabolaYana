@@ -28,13 +28,13 @@
     <p>Наберём код в текстовом редакторе (например, в <strong>gedit</strong>). Потом мы разберёмся, что делает
         каждая строка и пойдём дальше.</p>
     <p>Введите эти 4 строки:</p>
-    <br>
-    <ul>
-        <p><code>#!/usr/bin/env python</code></p>
-        <p><code>print 'Hello. I am a python program.'</code></p>
-        <p><code>name = raw_input("What is your name?")</code></p>
-        <p><code>print "Hello there, " + name + "!"</code></p>
-    </ul>
+    <br> 
+        <pre><code>
+        #!/usr/bin/env python
+        print 'Hello. I am a python program.'
+        name = raw_input("What is your name?")
+        print "Hello there, " + name + "!"</code></pre>
+   
     <p>Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в папке
         <strong>python_examples</strong> в домашнем каталоге. Этот пример показывает, как просто написать
         программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
@@ -42,23 +42,24 @@
     <p><code><strong><u><em>chmod +x hello.py</em></u></strong></code></p>
     <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
     <br>
-    <ul>
-        <p><code>greg@earth:~/python_examples$ ./hello.py</code></p>
-        <p><code>Hello. I am a python program.</code></p>
-        <p><code>What is your name? Ferd Burphel</code></p>
-        <p><code>Hello there, Ferd Burphel!</code></p>
-        <p><code>greg@earth:~/python_examples$</code></p>
-    </ul>
+  
+        <pre><code>
+        greg@earth:~/python_examples$ ./hello.py
+        Hello. I am a python program.
+        What is your name? Ferd Burphel
+        Hello there, Ferd Burphel!
+        greg@earth:~/python_examples$</code></pre>
+   
     <p>Вот и всё. </p>
     <h2>Пример цикла For</h2>
     <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
         редактор и наберите следующую программу:</p>
     <br>
-    <ul>
-        <p><code>#!/usr/bin/env python</code></p>
-        <p><code>for cntr in range(0,10):</code></p>
-        <p><code>print cntr</code></p>
-    </ul>
+        <pre><code>
+        #!/usr/bin/env python
+        for cntr in range(0,10):
+        print cntr</code></pre>
+    
     <p><em>Не забудьте поставить символ табуляции перед строкой «print cntr». </em> Это важно. В
         Python для указания на блоки кода используются не круглые <strong>«(»</strong> и фигурные <strong>«{»</strong> скобки
         как в других языках программирования, а отступы.</p>
