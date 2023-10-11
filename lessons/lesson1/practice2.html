@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=hq, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Форма заявки на работу в парк</h1>
+    <p><em>Пожалуйста, заполните форму. Обязательные поля отмечены <sup style="color: red;">*</sup>;</em></p>
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <fieldset>
+             <legend><h3>Контактная информация</h3></legend>
+            
+            
+            <table>
+                <th>
+                    <td>
+                    <label for="name"></label>  
+                Имя <sup style="color: red;">*</sup>
+                    <input type="text" name="name">
+                  </td>
+                </th>
+        </table>
+        <table>
+            <tr>
+                <td>
+                 <label for="phone"></label>
+                Телефон
+                   <input type="text" name="phone">
+              </td>
+              </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <label for="Email"></label>
+                    Email <sup style="color: red;">*</sup>
+                    <input type="text" name="email">
+                </td>
+            </tr>
+         </table>
+     </fieldset>
+    </form>
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <fieldset>
+             <legend><h3>Персональная информация</h3></legend>
+            
+            <table>
+                <th>
+                    <td>
+                    <label for="age"></label>  
+                Возраст <sup style="color: red;">*</sup>
+                    <input type="text" name="age">
+                  </td>
+                </th>
+        </table>
+        <table>
+            <tr>
+                <td>
+                 <label for="sex"></label>
+                Пол
+                   <select name="sex" id="sex">
+                    <option value="1">Женщина</option>
+                    <option value="2">Мужчина</option>
+                   </select>
+              </td>
+              </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <label for="comments"></label>
+                    Перечислите <br> 
+                    свои <br>
+                    личные <br>
+                    качества<br>
+                    <textarea name="comments" lang="ru" cols="30" rows="10"></textarea>  
+                </td>
+            </tr>
+         </table>
+     </fieldset>
+     <fieldset>
+        <legend> <h3>Выберите ваших любимых животных</h3></legend>
+        <table>
+            <tr>
+                <td>
+                   <label for="choice">
+                    <input type="checkbox" name="choice[]"> Зебра
+                   </label> </td>
+                <td>
+                    <label for="choice">
+                        <input type="checkbox" name="choice[]"> Кошка
+                       </label> </td>
+                <td>
+                    <label for="choice">
+                        <input type="checkbox" name="choice[]"> Анаконда
+                       </label>  
+                </td>
+                <td>
+                    <label for="choice">
+                        <input type="checkbox" name="choice[]"> Человек
+                       </label>  
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="choice">
+                     <input type="checkbox" name="choice[]"> Cлон
+                    </label> </td>
+                 <td>
+                     <label for="choice">
+                         <input type="checkbox" name="choice[]"> Антилопа
+                        </label> </td>
+                 <td>
+                     <label for="choice">
+                         <input type="checkbox" name="choice[]"> Голубь
+                        </label>  
+                 </td>
+                 <td>
+                     <label for="choice">
+                         <input type="checkbox" name="choice[]"> Краб
+                        </label>  
+                 </td>
+            </tr>
+        </table>
+     </fieldset>
+     <input type="Submit" value="Отправить информацию">
+    </form>
+
+</body>
+</html>
