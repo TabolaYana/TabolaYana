@@ -7,7 +7,7 @@
     .flex-container{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
     }
     .flex-container2{
         flex-grow: 1;
@@ -26,6 +26,11 @@
         margin-bottom: .2em;
         background-color: rgb(161, 161, 161);
     }
+    .flex-image{
+        display: flex;
+        justify-content: right;
+    }
+    
 
     .flex-footer{
         width: 100%;
